@@ -1,0 +1,10 @@
+if (!fs.existsSync(BANNER_DB)) {
+  fs.writeFileSync(
+    BANNER_DB,
+    JSON.stringify(
+      { image: "", active: false },
+      null,
+      2
+    )
+  );
+}
